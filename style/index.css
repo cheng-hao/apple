@@ -1,0 +1,677 @@
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:100;
+	src:local('Myriad set Pro'), 
+	url("../font/myriad-set-pro_thin.woff") format("woff"); 
+	
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+body{
+	font-family:"Myriad Set Pro","微软雅黑";
+	margin:0;
+}
+article, aside, footer, header, nav, main, section, summary, details, hgroup, figure, figcaption {
+    display: block;
+}
+ul,h1,h2,h3,h4,h5,h6,li,a,p{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-weight: normal;
+	color: black;
+	text-decoration: none;
+}
+.topnav{
+	text-align:justify;
+	width:100%;
+	height:44px;
+	background:rgba(0,0,0,0.8);
+}
+.topnav ul{
+	max-width:952px;
+	min-width:768px; 
+	margin: 0 auto;
+	height:44px;
+	padding:0 24px;
+}
+.topnav ul li{
+	height:44px;
+	line-height: 44px;
+	display: inline-block;
+	padding: 0 22px;
+}
+.topnav ul li a{
+	width:100%;
+	height:100%;
+	display: block;
+}
+.topnav ul li:hover{
+	opacity:0.6;
+}
+.topnav ul li a span{
+	width:0px;
+	height:0px;
+	overflow: hidden;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.topnav ul:after{
+	content:"";
+	display: inline-block;
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	height:0;
+}
+.topnav ul .logo{
+	width: 1.25em;
+	height:44px;
+	background:url(../images/tubiao.svg) no-repeat center;
+}
+.topnav ul .mac{
+	width:1.937em;
+	background:url(../images/mac.svg) no-repeat center;
+}
+.topnav ul .ipad{
+	width: 3.5em;
+	background:url(../images/ipad.svg) no-repeat center;
+}
+.topnav ul .iphone{
+	width: 3.5em;
+	background:url(../images/iphone.svg) no-repeat center;
+}
+.topnav ul .watch{
+	width: 3.5em;
+	background:url(../images/watch.svg) no-repeat center;
+}
+.topnav ul .tv{
+	width: 3.5em;
+	background:url(../images/tv.svg) no-repeat center;
+}
+.topnav ul .music{
+	width: 3.5em;
+	background:url(../images/music.svg) no-repeat center;
+}
+.topnav ul .support{
+	width: 3.5em;
+	background:url(../images/supporte.svg) no-repeat center;
+}
+.topnav ul .fangda{
+	width: 3.5em;
+	background:url(../images/fangda.svg) no-repeat center;
+}
+.topnav ul .suozi{
+	width:1.125em;
+	background:url(../images/xiaosuo.svg) no-repeat center;
+}
+.smallnav{
+	width: 100%;
+	height:48px;
+	background:#000;
+	background:rgba(0,0,0,1);
+	display: none;
+}
+.smallnav .smallul{
+	position: relative;
+}
+.smallnav .smallul .list{
+	width: 44px;
+	height:48px;
+}
+.smallnav .smallul .list .span1{
+	position: absolute;
+	top:20px;
+	left:16px;
+	display: block;
+	width:17px;
+	height:2px;
+	background:#fff;	
+}
+.smallnav .smallul .list .span2{
+	position: absolute;
+	top:27px;
+	left:16px;
+	display: block;
+	width:17px;
+	height:1px;
+	background:#fff;
+}
+.smallnav .smallul a{
+	display: block;
+	width:100%;
+	height:100%;
+	font-size: 0;
+}
+.smallnav .smallul li:hover{
+	opacity:0.6;
+}
+.smallnav .smallul .logo{
+	width: 44px;
+	height:48px;
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left: -22px;
+	background:url(../images/tubiao.svg) no-repeat center center;
+}
+.smallnav .smallul .suozi{
+	width: 44px;
+	height:48px;
+	position: absolute;
+	top:0;
+	right:0;
+	background:url(../images/xiaosuo.svg) no-repeat center center;
+}
+#input,#input1,#input2,#input3,#input4,#input5,#input6,#input7{
+	display: none;
+}
+.label-1{
+	display: block;
+	width: 100%;
+	height:100%;
+}
+.xiala{
+	visibility: hidden;
+	width:auto;
+	height:auto;
+	background:#000;
+    position: absolute;
+    z-index: 2;
+    top: 48px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 48px;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.xiala li{
+    height: 47px;
+    border-bottom: 1px solid #333;
+    line-height: 47px;
+}
+.xiala li a{
+	color:#fff;
+}
+article{
+	text-align:justify;
+	width:100%;
+    position: relative;
+    z-ind ex: 0;
+    border-bottom: 2px solid #fff;
+    height: 78%;
+    marg in-top: -46px;
+    min-height: 650px;
+    overflow: hidden;
+}
+article section{
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.bg{
+	width:100%;
+	height:100%;
+	background: url(../images/2Q==.jpg) no-repeat center top;
+}
+.copy{
+	left: 50%;
+	top: auto;
+	vertical-align: top;
+	height: 41%;
+	margin-top:340px;
+}
+.copy-inner{
+	width:100%;
+	height:auto;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+.back{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: auto;
+	right: auto;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	pointer-events: auto;
+}
+.copy .copy-inner h1{
+	background-size: 136px 50px;
+	height: 50px;
+	width: 136px;
+	background:url(../images/h1bg.png) no-repeat center;
+	overflow: hidden;
+	margin-right: auto;
+	margin-bottom: 0.25em;
+	margin-left: auto;
+	text-indent: -2000px;
+}
+.copy .copy-inner h2{
+	font-size: 42px;
+	line-height: 1.1429;
+	font-weight: 200;
+	margin-bottom: 0.5em;
+	margin: 0.5em 0px 0px;
+}
+.links{
+	font-size: 20px;
+	line-height: 1.4;
+	font-weight: 200;
+
+}
+.links li{
+	display: inline-block;
+	margin-left: 0.3em;
+	margin-right: 0.35em;
+	margin-bottom: 0.5em;
+}
+.links li a{
+	font-size: 20px;
+	color:#08c;
+}
+.links li a:hover{
+	color:#333;
+}
+.icon-left{
+	background:url();
+}
+.diannav{
+	width:100%;
+	height:40px;
+	font-size: 18px;
+	line-height: 1.45;
+	position: absolute;
+	left: 0px;
+	bottom:60px;
+	right: 0px;
+	text-align: center;
+	margin-top: 100px;
+}
+.diannav ul{
+	display: inline-block;
+	line-height: 1.45;
+
+}
+.diannav ul li{
+	color: #333;
+	margin: 0px 10px;
+	width: 8px;
+	height: 8px;
+	float: left;
+	position: relative;
+}
+.diannav ul li a{
+	top: 0px;
+	left: 0px;
+	width: 8px;
+	height: 8px;
+	outline: medium none;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #999;
+}
+.proms ul{
+	overflow: hidden;
+}
+.proms li{
+	width:25%;
+	height:198px;
+	float: left;
+	position: relative;
+	border-bottom:2px solid #fff;
+}
+.proms li a{
+	display: block;
+	height:100%;
+	background-size:cover;
+	background-position: center;
+	font-size: 0;
+	border-right: 2px solid #fff;
+}
+.proms ul:after{
+	content: "";
+	clear: both;
+	line-height: 0;
+	font-size: 0;
+}
+.proms li .proms-watch{
+	background-image:url(../images/promo_holiday_watch_medium.jpg);
+}
+.proms li .proms-iphooe{
+	background-image: url(../images/promo_startsomethingnew_iphone6s_medium.jpg);
+}
+.proms li .proms-ios{
+	background-image: url(../images/Z.jpg)
+}
+.proms li .proms-mac{
+	background-image: url(../images/promo_macbook_medium.jpg);
+}
+
+.globalfooter{
+	width:100%;
+	font-size: 12px;
+	line-height: 1.66;
+	background:#F2F2F2;
+	color: #666;
+	letter-spacing: normal;
+}
+.gf-content{
+	max-width: 980px;
+	margin:0 auto;
+	padding:0 20px;
+	
+}
+.gf-con-nav{
+	width: 100%;
+	font-size: 12px;
+	line-height: 1.66667;
+	font-weight: 400;
+	letter-spacing: normal;
+	position: relative;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.gf-con-nav:after{
+	content: "";
+	clear: both;
+}
+.col{
+	width: 20%;
+	min-height: 2px;
+	float: left;
+}
+.col-section{
+	position: relative;
+	min-height: 2px;
+	float: left;
+	pointer-events: none;
+	margin: 0px;
+	width: 100%;
+}
+.col-ct-label{
+	pointer-events: auto;
+}
+.lable-top{
+	padding-top:20px; 
+}
+.col-ct-label h3{
+	color: #333;
+	font-weight: 600;
+	font-size:12px ;
+}
+.col-se ction-ul{
+	margin: 0;
+    overflow: hidden;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+	margin-right: 20px;
+}
+.col-section ul li{
+	font-weight: inherit;
+	line-height: inherit;
+	text-align: inherit;
+	font-size: 1em;
+	pointer-events: auto;
+}
+.col-section ul li a{
+	display: block;
+	width:100%;
+	height:100%;
+	color:#666;
+	pointer-events: auto;
+}
+.col-section ul li a:hover{
+	text-decoration: underline;
+}
+.ac-gf-footer{
+	color: #999;
+	padding: 20px 0px 24px;
+}
+.ac-gf-shop{
+	border-bottom: 1px solid #E3E3E3;
+	max-height: 9999px;
+	margin-bottom: 6px;
+	padding-bottom: 5px;
+}
+.ac-gf-shop a{
+	color:#08c;
+}
+.ac-gf-shop a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+.ac-gf-locale{
+	float: right;
+}
+.ac-gf-locale-flag{
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../images/guoqi.png");
+	cursor: pointer;
+	float: left;
+	margin-top: 1px;
+	padding-right: 5px;
+}
+.ac-gf-locale a{
+	color:#666;
+}
+.ac-gf-locale a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+.ac-gf-legal{
+	color: #999;
+}
+.ac-gf-legal-copyright{
+	max-height: 9999px;
+	margin-right: 26px;
+	float: left;
+}
+.ac-gf-legal-links{
+	margin-right: 26px;
+	float: left;
+}
+.ac-gf-legal-links a{
+	border-right: 1px solid #D6D6D6;
+	margin-right: 10px;
+	padding-right: 12px;
+	white-space: nowrap;
+}
+.ac-gf-legal-links a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+.ac-gf-footer:after{
+	display: block;
+	content: "";
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+}
+.ac-gf-legal-links .links-a1{
+	border-right:none; 
+}
+@media(max-width:1024px){
+	.proms li{
+		width:50%;
+	}
+}
+@media(max-width:767px){
+	.topnav{
+		display: none;
+	}
+	.smallnav{
+		display: block;
+	}
+	#input:checked~.smallnav .xiala{
+	visibility:visible;
+	}
+	#input:checked~.smallnav .suozi{
+		display: none;
+	}
+	#input:checked~.smallnav .label-1 span{
+		transition:all 0.5s ease;
+	}
+	#input:checked~.smallnav .label-1 span:first-child{
+	transform:rotateZ(45deg) translateX(2px) translateY(3px);
+	background: #999;
+}
+	#input:checked~.smallnav .label-1 span:last-child{
+	transform:rotateZ(-45deg) translateY(-2px) translateX(1px);
+}
+	.proms li{
+		width:100%;
+	}
+	.proms li .proms-watch{
+	background-image:url(../images/promo_holiday_watch_small.jpg);
+	border-bottom:2px solid #fff;
+	}
+	.proms li .proms-iphooe{
+		background-image: url(../images/promo_startsomethingnew_iphone6s_small.jpg);
+		border-bottom:2px solid #fff;
+	}
+	.proms li .proms-ios{
+		background-image: url(../images/promo_ios93preview_small.jpg);
+		border-bottom:2px solid #fff;
+	}
+	.proms li .proms-mac{
+		background-image: url(../images/promo_macbook_small.jpg);
+		border-bottom:2px solid #fff;
+	}
+	.globalfooter .gf-con-nav .col{
+		width:100%;
+		font-size: 12px;
+		line-height: 2.5;
+		font-weight: 200;
+	}
+	
+	.globalfooter .gf-con-nav .col .col-section{
+		border-bottom: 1px solid #E3E3E3;
+		overflow: hidden;
+		pointer-events: auto;
+	}
+	.globalfooter .gf-con-nav .col .col-section h3{
+		cursor: pointer;
+		font-size: 14px;
+		line-height: 2.78571;
+		color:#666;
+	}
+	.globalfooter .gf-con-nav .col .col-section h3:after{
+		content:"+" ;
+		float: right;
+		transition: transform .3s ease;
+	}
+	.globalfooter .gf-con-nav .col .col-section h3:hover{
+		color:#333;
+	}
+	.col-section{
+		border-bottom:none;
+	}
+	.col-section-ul{
+		visibility: hidden;
+		
+		padding-bottom: 0px;
+		position: absolute;
+		top: 100%;
+		left: 0px;
+		width: 100%;
+		
+		tr ansform: translateY(-100px);
+	}
+
+	.col-ct-label h3{
+		border-bottom: 1px solid #e3e3e3;
+	}
+	.lable-top{
+		padding-top:0px; 
+	}
+	#input1:checked~.col-section-ul{
+		visibility: visible;
+		position: static;
+	}
+	#input2:checked~.col-section-ul{
+		visibility: visible;
+		position: static;
+	}
+	#input3:checked+.col-ct-label+.col-section-ul{
+		visibility: visible;
+		position: static;
+	}
+	#input4:checked~.col-section-ul{
+		visibility: visible;
+		position: static;
+	}
+	#input5:checked+.col-ct-label+.col-section-ul{
+		visibility: visible;
+		position: static;
+	}
+	#input6:checked~.col-section-ul{
+		visibility: visible;
+		position: static;
+	}
+	#input7:checked~.col-section-ul{
+		visibility: visible;
+		position: static;
+	}
+	#input7:checked~.col-ct-label h3:after{
+		transform: rotate(45deg) scale(1.08);
+	}
+	#input6:checked~.col-ct-label h3:after{
+		transform: rotate(45deg) scale(1.08);
+	}
+	#input5:checked+.col-ct-label h3:after{
+		transform: rotate(45deg) scale(1.08);
+	}
+	#input4:checked~.col-ct-label h3:after{
+		transform: rotate(45deg) scale(1.08);
+	}
+	#input3:checked+.col-ct-label h3:after{
+		transform: rotate(45deg) scale(1.08);
+	}
+	#input2:checked~.col-ct-label h3:after{
+		transform: rotate(45deg) scale(1.08);
+	}
+	#input1:checked~.col-ct-label h3:after{
+		transform: rotate(45deg) scale(1.08);
+	}
+	.ac-gf-locale{
+		float: none;
+		position: relative;
+		left: -1px;
+	}
+	.ac-gf-legal{
+		padding-top: 13px;
+	}
+	.ac-gf-shop{
+		border:none;
+	}
+	.ac-gf-legal-links a{
+		color: #333;
+	}
+	.bg{
+		background: url(../images/home_hero_apple_tv_landscape_small.jpg) no-repeat center;
+	}
+
+}
