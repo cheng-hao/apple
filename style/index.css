@@ -26,7 +26,12 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 .topnav{
 	text-align:justify;
 	width:100%;
-	height:44px;
+	max-height:44px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	z-index: 9999;
 	background:rgba(0,0,0,0.8);
 }
 .topnav ul{
@@ -111,15 +116,27 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	width: 100%;
 	height:48px;
 	background:#000;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 9999;
+	pointer-events: auto;
 	background:rgba(0,0,0,1);
 	display: none;
+	transition:width .5s,height .5s,background-color .5s;
 }
 .smallnav .smallul{
+	width:100%;
+	height:100%;
 	position: relative;
+	transition:width .3s ,height .3s;
 }
 .smallnav .smallul .list{
 	width: 44px;
 	height:48px;
+}
+.smallnav .smallul .list span{
+	transition:all .5s ease;
 }
 .smallnav .smallul .list .span1{
 	position: absolute;
@@ -172,12 +189,13 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	display: block;
 	width: 100%;
 	height:100%;
+	cursor: pointer;
 }
 .xiala{
 	visibility: hidden;
 	width:auto;
 	height:auto;
-	background:#000;
+	bac kground:#000;
     position: absolute;
     z-index: 2;
     top: 48px;
@@ -189,6 +207,7 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
     box-sizing: border-box;
     overflow: hidden;
     overflow-y: auto;
+    transition:all .5s ease;
 }
 .xiala li{
     height: 47px;
@@ -198,43 +217,83 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 .xiala li a{
 	color:#fff;
 }
-article{
-	text-align:justify;
-	width:100%;
-    position: relative;
-    z-ind ex: 0;
-    border-bottom: 2px solid #fff;
-    height: 78%;
-    marg in-top: -46px;
-    min-height: 650px;
-    overflow: hidden;
+.ll{
+	height: 78%;
+	min-height: 650px;
+	position: relative;
+	z-index: 2;
+	border-bottom: 2px solid #FFF;
+	marg in-top: -46px;
+	overflow: hidden;
+	background-color: #FFF;
 }
-article section{
+.section1{
     position: absolute;
-    
+    left: 0px;
+    top:0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
-.bg{
-	width:100%;
-	height:100%;
-	background: url(../images/2Q==.jpg) no-repeat center top;
+.hero-content{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: auto;
+	right: auto;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 6;
 }
+
 .copy{
-	left: 50%;
-	top: auto;
 	vertical-align: top;
 	height: 41%;
-	margin-top:340px;
+	position: absolute;
+	left: 50%;
+	top: auto;
+	right:auto;
+	bottom:260px;
+	width: 100%;
+	text-align: center;
+	
+}
+.copy:before{
+	content: " ";
+	display: inline-block;
+	height: 100%;
+	width: 0px;
+	font-size: 0px;
+	margin: 0px -1000px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.copy:after{
+	content: " ";
+	display: inline-block;
+	height: 100%;
+	width: 0px;
+	font-size: 0px;
+	margin: 0px -1000px;
+	padding: 0px;
+	vertical-align: middle;
 }
 .copy-inner{
-	width:100%;
-	height:auto;
+	vertical-align: top;
+	padding-top: 165px;
 	position: relative;
+	top: 100%;
+	left: -50%;
 	display: inline-block;
-	text-align: center;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	z-index: 11;
 }
 .back{
 	display: block;
@@ -248,13 +307,14 @@ article section{
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	pointer-events: auto;
+	pointer-events:all;
+
 }
 .copy .copy-inner h1{
-	background-size: 136px 50px;
 	height: 50px;
 	width: 136px;
 	background:url(../images/h1bg.png) no-repeat center;
+	background-size: 136px 50px;
 	overflow: hidden;
 	margin-right: auto;
 	margin-bottom: 0.25em;
@@ -265,30 +325,74 @@ article section{
 	font-size: 42px;
 	line-height: 1.1429;
 	font-weight: 200;
-	margin-bottom: 0.5em;
-	margin: 0.5em 0px 0px;
+	margin:0px 0px 0.5em 0px;
 }
 .links{
+	margin: 0.75em 0px 0px;
 	font-size: 20px;
 	line-height: 1.4;
 	font-weight: 200;
-
+	
 }
 .links li{
 	display: inline-block;
 	margin-left: 0.3em;
 	margin-right: 0.35em;
 	margin-bottom: 0.5em;
+	line-height: 1.4;
 }
 .links li a{
 	font-size: 20px;
 	color:#08c;
+	line-height: 1.4;
+	font-weight: 200;
+	pointer-events: all;
 }
 .links li a:hover{
 	color:#333;
 }
 .icon-left{
 	background:url();
+}
+.hero-wrapper{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.hero-image{
+	min-height: 396px;
+	position: absolute;
+	bottom: auto;
+	right: auto;
+	left: 0px;
+	top: 0px;
+	min-width: 130px;
+	min-height: 117px;
+	width: 50%;
+	height: 0%;
+	max-width: calc(100% - 130px);
+	max-height: calc(100% - 117px);
+	background-position: 50% 50%;
+	margin: 0;
+	padding: 0;
+}
+.hero-image-inner{
+	background-image: url(../images/2Q==.jpg);
+	background-size: 821px 466px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 821px;
+	height: 466px;
+	overflow: visible;
+	position: absolute;
+	top: 44px;
+	left: auto;
+	
+	right: -403px;
 }
 .diannav{
 	width:100%;
@@ -297,7 +401,7 @@ article section{
 	line-height: 1.45;
 	position: absolute;
 	left: 0px;
-	bottom:60px;
+	bottom:3px;
 	right: 0px;
 	text-align: center;
 	margin-top: 100px;
@@ -525,14 +629,23 @@ article section{
 	.smallnav{
 		display: block;
 	}
+	#input:checked~.smallnav{
+
+		
+		height:100%;
+		background:red;
+		
+	}
 	#input:checked~.smallnav .xiala{
-	visibility:visible;
+		width:100%;
+		height:100%;
+		visibility:visible;
 	}
 	#input:checked~.smallnav .suozi{
 		display: none;
 	}
 	#input:checked~.smallnav .label-1 span{
-		transition:all 0.5s ease;
+		transition:all .5s ease;
 	}
 	#input:checked~.smallnav .label-1 span:first-child{
 	transform:rotateZ(45deg) translateX(2px) translateY(3px);
@@ -591,14 +704,13 @@ article section{
 	}
 	.col-section-ul{
 		visibility: hidden;
-		
 		padding-bottom: 0px;
 		position: absolute;
 		top: 100%;
 		left: 0px;
 		width: 100%;
 		
-		tr ansform: translateY(-100px);
+		
 	}
 
 	.col-ct-label h3{
