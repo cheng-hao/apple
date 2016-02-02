@@ -12,8 +12,8 @@ $(function(){
 	move = (function(){
 		var num = 1;
 		return function(){
-			$('.dian li a').removeClass('btn');
-			$('.dian li a').eq(num).addClass('btn');
+			$('.dian li').removeClass('btn');
+			$('.dian li').eq(num).addClass('btn');
 			var off = -num*WW;
 			$('.section1').css({'transform':'translateX('+off+'px)'});
 			num+=1;
@@ -30,14 +30,14 @@ $(function(){
 	//     链的近端会覆盖远端变量
 	//常见用法： 消除全局变量
 	//           传递临时状态
-	$('li').each(function(i){
+	$('.dian li').each(function(i){
 		$(this).data('a',i);
 	})
-	$('li').click(function(){
+	$('.dian li').click(function(){
 		clearInterval(t);
-		$('li').removeClass('btn');
+		$('.dian li').removeClass('btn');
 		$(this).addClass('btn');
 		var off=-$(this).data('a')*WW;
-		$('.slide').css({'transform':'translateX('+off+'px)'});
+		$('.section1').css({'transform':'translateX('+off+'px)'});
 	})
 })

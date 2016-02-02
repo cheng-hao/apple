@@ -482,8 +482,8 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	float: left;
 	position: relative;
 }
-.diannav ul li a{
-	display: block;
+.diannav ul li{
+	display: inline-block;;
 	top: -1px;
 	left: -1px;
 	width: 8px;
@@ -491,21 +491,20 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	border-style: solid;
 	border-width: 1px;
 	border-color: #08C;
+	border-radius: 50%;
 	background-color: transparent;
 	cursor: default;
 }
-.diannav ul li .btn{
+.diannav ul .btn{
 	width:8px;
 	height:8px;
 	background: #fff;
 }
-.diannav ul li a{
-	top: 0px;
-	left: 0px;
+.diannav ul li{
+	
 	width: 8px;
 	height: 8px;
 	outline: medium none;
-	position: absolute;
 	border-radius: 50%;
 	background-color: #999;
 }
@@ -932,7 +931,7 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 		line-height: 1.1429;
 		font-weight: 200;
 		letter-spacing: -0.015em;
-		color: #333;
+
 	}
 	.links2{
 		margin-top: -10px;
