@@ -121,7 +121,7 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	top:0;
 	z-index: 9999;
 	pointer-events: auto;
-	background:rgba(0,0,0,1);
+	background:rgba(0,0,0,0.8);
 	display: none;
 	transition:width .5s,height .5s,background-color .5s;
 }
@@ -295,6 +295,12 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	padding: 0px;
 	z-index: 11;
 }
+.copy-inner2{
+	top: -50px;
+}
+.copy-inner3{
+	top:-30px;
+}
 .back{
 	display: block;
 	position: absolute;
@@ -310,7 +316,7 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	pointer-events:all;
 
 }
-.copy .copy-inner h1{
+.copy .copy-inner .tubiao-h1{
 	height: 50px;
 	width: 136px;
 	background:url(../images/h1bg.png) no-repeat center;
@@ -321,11 +327,33 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	margin-left: auto;
 	text-indent: -2000px;
 }
+.copy .copy-inner .tubiao-h3{
+	line-height: 1.1429;
+	font-weight: 200;
+	width:100%;
+	overflow: hidden;
+	margin-right: auto;
+	margin-bottom: 0.25em;
+	margin-left: auto;
+	font-size: 36px;
+}
+.copy .copy-inner .zihao{
+	font-size: 64px;
+}
 .copy .copy-inner h2{
 	font-size: 42px;
 	line-height: 1.1429;
 	font-weight: 200;
 	margin:0px 0px 0.5em 0px;
+}
+.copy .copy-inner .tubiao-h3-1{
+	font-size: 20px;
+	line-height: 1.4; 
+}
+.copy .copy-inner .tubiao-h3-2{
+	font-size: 32px;
+	line-height: 1.125;
+	font-weight: 200;
 }
 .links{
 	margin: 0.75em 0px 0px;
@@ -350,6 +378,14 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 }
 .links li a:hover{
 	color:#333;
+}
+.links3{
+	margin-top: 0px;
+}
+.links li .link-3{
+	font-size:14px;
+	line-height: 1.2857;
+	font-weight: 400; 
 }
 .icon-left{
 	background:url();
@@ -391,8 +427,34 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	position: absolute;
 	top: 44px;
 	left: auto;
-	
 	right: -403px;
+}
+.inner1{
+	background-image: url(../images/9k=.jpg);
+	background-size: 1000px 652px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 1000px;
+	height: 652px;
+	overflow: visible;
+	position: absolute;
+	top: auto;
+	left: auto;
+	bottom: -777px;
+	right: -500px;
+}
+.inner2{
+	background-image: url(../images/qecgAAAABJRU5ErkJggg==.png);
+	background-size: 1433px 610px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 1433px;
+	height: 610px;
+	overflow: visible;
+	position: absolute;
+	top:0;
+	left: auto;
+	right: -780px;
 }
 .diannav{
 	width:100%;
@@ -405,6 +467,7 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	right: 0px;
 	text-align: center;
 	margin-top: 100px;
+	z-index: 8;
 }
 .diannav ul{
 	display: inline-block;
@@ -418,6 +481,23 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	height: 8px;
 	float: left;
 	position: relative;
+}
+.diannav ul li a{
+	display: block;
+	top: -1px;
+	left: -1px;
+	width: 8px;
+	height: 8px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #08C;
+	background-color: transparent;
+	cursor: default;
+}
+.diannav ul li .btn{
+	width:8px;
+	height:8px;
+	background: #fff;
 }
 .diannav ul li a{
 	top: 0px;
@@ -631,7 +711,7 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	}
 	#input:checked~.smallnav{
 		height:100%;
-		background:red;
+		background:#000;
 	}
 	#input:checked~.smallnav .xiala{
 		width:100%;
@@ -808,6 +888,58 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 		bottom: -53px;
 		right: -200px;
 	}
-	
-
+	.inner1{
+		background: url(../images/home_hero_evergreen_ipad_small.jpg) no-repeat center;
+		background-size: 425px 277px;
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		width: 425px;
+		height: 277px;
+		overflow: visible;
+		position: absolute;
+		top: auto;
+		left: auto;
+		bottom: -350px;
+		right: -210px;
+	}
+	.inner2{
+		background: url(../images/home_hero_ssn_small.png) no-repeat center;
+		background-size: 658px 280px;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		width: 658px;
+		height:280px;
+		overflow: visible;
+		position: absolute;
+		top: auto;
+		left: auto;
+		bottom: -83px;
+		right: -360px;
+	}
+	.copy-inner2{
+		padding-top:130px;
+	}
+	.copy-inner3{
+		padding-top: 255px;
+	}
+	.copy .copy-inner .zihao{
+		font-size: 48px;
+		line-height: 1;
+		color: #333;
+	}
+	.copy .copy-inner .tubiao-h3-2{
+		font-size: 28px;
+		line-height: 1.1429;
+		font-weight: 200;
+		letter-spacing: -0.015em;
+		color: #333;
+	}
+	.links2{
+		margin-top: -10px;
+	}
+	.links2 li a{
+		font-size: 14px;
+		line-height: 1.2857;
+		font-weight: 400;
+	}
 }
