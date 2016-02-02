@@ -630,11 +630,8 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 		display: block;
 	}
 	#input:checked~.smallnav{
-
-		
 		height:100%;
 		background:red;
-		
 	}
 	#input:checked~.smallnav .xiala{
 		width:100%;
@@ -709,10 +706,7 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 		top: 100%;
 		left: 0px;
 		width: 100%;
-		
-		
 	}
-
 	.col-ct-label h3{
 		border-bottom: 1px solid #e3e3e3;
 	}
@@ -782,8 +776,38 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	.ac-gf-legal-links a{
 		color: #333;
 	}
-	.bg{
-		background: url(../images/home_hero_apple_tv_landscape_small.jpg) no-repeat center;
+	.ll{
+		height: 50%;
+		min-height: 391px;
 	}
+	.copy-inner{
+		padding-top: 65px;
+	}
+	.copy .copy-inner h1{
+		background-size: 117px 43px;
+		height: 43px;
+		width: 117px;
+	}
+	.copy .copy-inner h2{
+		font-size: 28px;
+		line-height: 1.1429;
+		font-weight: 200;
+		margin-bottom: 0.25em;
+	}
+	.hero-image-inner{
+		background: url(../images/home_hero_apple_tv_landscape_small.jpg) no-repeat center;
+		background-size: 400px 122px;
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		width: 400px;
+		height: 122px;
+		overflow: visible;
+		position: absolute;
+		top: auto;
+		left: auto;
+		bottom: -53px;
+		right: -200px;
+	}
+	
 
 }
