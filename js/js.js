@@ -23,7 +23,7 @@ $(function(){
 		}
 	})();
 
-	var t = setInterval(move,2000);
+	var t = setInterval(move,3000);
 	//闭包 函数在定义时会记录下可见区域内的变量
 	//     从近到远形成链，成为作用域链
 	//     函数在调用时，整个链上的变量都是可见状态

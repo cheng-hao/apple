@@ -195,7 +195,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	visibility: hidden;
 	width:auto;
 	height:auto;
-	bac kground:#000;
     position: absolute;
     z-index: 2;
     top: 48px;
@@ -234,6 +233,7 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
     height: 100%;
     width: 100%;
     overflow: hidden; 
+    transition: all 0.3s ease;
 }
 .hero-content{
 	position: absolute;
@@ -249,7 +249,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	pointer-events: none;
 	z-index: 6;
 }
-
 .copy{
 	vertical-align: top;
 	height: 41%;
@@ -260,7 +259,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	bottom:260px;
 	width: 100%;
 	text-align: center;
-	
 }
 .copy:before{
 	content: " ";
@@ -314,7 +312,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	height: 100%;
 	opacity: 0;
 	pointer-events:all;
-
 }
 .copy .copy-inner .tubiao-h1{
 	height: 50px;
@@ -360,7 +357,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	font-size: 20px;
 	line-height: 1.4;
 	font-weight: 200;
-	
 }
 .links li{
 	display: inline-block;
@@ -472,7 +468,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 .diannav ul{
 	display: inline-block;
 	line-height: 1.45;
-
 }
 .diannav ul li{
 	color: #333;
@@ -501,7 +496,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	background: #fff;
 }
 .diannav ul li{
-	
 	width: 8px;
 	height: 8px;
 	outline: medium none;
@@ -544,7 +538,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 .proms li .proms-mac{
 	background-image: url(../images/promo_macbook_medium.jpg);
 }
-
 .globalfooter{
 	width:100%;
 	font-size: 12px;
@@ -557,7 +550,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 	max-width: 980px;
 	margin:0 auto;
 	padding:0 20px;
-	
 }
 .gf-con-nav{
 	width: 100%;
@@ -931,7 +923,6 @@ ul,h1,h2,h3,h4,h5,h6,li,a,p{
 		line-height: 1.1429;
 		font-weight: 200;
 		letter-spacing: -0.015em;
-
 	}
 	.links2{
 		margin-top: -10px;
